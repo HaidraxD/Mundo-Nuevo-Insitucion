@@ -1,0 +1,243 @@
+#footer{
+    background-color: #333 ;
+    color:  var(--text-color-inverse);
+    padding: 20px 30px;
+}
+
+
+#footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer b{
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 0;
+    display: block;
+    
+}
+
+#footer .logo.a{
+    display: block;
+}
+
+#footer .logo.a div{
+    margin-bottom: 15px;
+}
+
+
+/*CONTACTOS*/
+
+#contacto{
+    background-color: #2F9C4B;
+    padding: 25px 0;
+
+}
+
+#contacto .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contacto h3{
+    color: var(--text-color-inverse);
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+#contacto .form-input{
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box; /*Hace que las paginas no pacen la caja primaria*/
+    resize: vertical; /*esto hace que no se edite el text area */
+    background-color: var(--text-color-inverse);
+    border: none;
+    border-bottom: 5px solid #34495E ;
+    color: var(--text-color-inverse);
+}
+
+#contacto .form-input:focus{
+    background: linear-gradient(to bottom, transparent, #34495E);
+    outline: none;
+}
+
+::placeholder{
+    color: #BDC3C7 ;
+}
+
+#contacto .form-input.area{
+    width: 100%;
+    min-height: 250px;
+    max-height: 400px;
+}
+
+#contacto .form-section{
+    margin: 7px 0;
+}
+
+#contacto .form-button{
+    float: right;
+    padding: 10px 15px;
+    margin: 0;
+    background: none;
+    border: 2px solid var(--text-color-inverse);
+    color: var(--text-color-inverse);
+    border-radius: 3px ;
+}
+
+#contacto .form-button:hover{
+    background: linear-gradient(
+        0deg,
+        #34495ed0,
+        #34495ed0
+    );
+}
+
+.logo-footer img{
+    width: 65px;
+    height: 70px;
+    padding-right: 10px;
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+    color: var(--text-color-inverse);
+    cursor: pointer;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.logo-footer span{
+    font-size: 18px;
+}
+
+@media (min-width: 750px) {
+
+    /* FOOTER  */
+
+     #footer{
+        background-color: #333 ;
+        color:  var(--text-color-inverse);
+        padding: 40px 30px;
+    }
+    
+    
+    #footer a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer b{
+        float: right;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    #footer .uno{
+        float: left;
+        
+    }
+    
+    
+    #footer .logo-footer div{
+        margin-bottom: 0;
+    }
+
+    /* FIN - FOOTER */
+
+    #contacto{
+        padding: 60px 0;
+    }
+
+    #contacto .form{
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    } 
+    
+    #contacto h3{
+        color: rgb(241, 235, 235);
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 35px;
+        padding: 12px;
+        font-weight: 700;
+    }
+
+    #contacto .prueba{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    #contacto .form-input{
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box; /*Hace que las paginas no pacen la caja primaria*/
+        resize: vertical; /*esto hace que no se edite el text area */
+        background-color: var(--text-color-inverse);
+        border: none;
+        border-bottom: 5px solid #34495E ;
+        color: var(--text-color);
+    }
+    
+    #contacto .form-input.area{
+        width: 100%;
+    }
+    
+    #contacto .form-input:focus{
+        background: linear-gradient(to bottom, transparent, #34495E);
+        outline: none;
+        color: var(--text-color-inverse);
+    }
+    
+    ::placeholder{
+        color: #BDC3C7 ;
+    }
+    
+    
+    
+    #contacto .form-section{
+        margin: 7px 10px;
+        flex-grow: 1;
+    }
+    
+    #contacto .form-button{
+        float: right;
+        padding: 10px 25px;
+        margin: 0;
+        background: #34495ed0;
+        border: none;
+        border-bottom: 2px solid var(--text-color-inverse);
+        color: var(--text-color-inverse);
+        border-radius: 3px ;
+    }
+    
+    #contacto .form-button:hover{
+        background: linear-gradient(
+            0deg,
+            rgba(255,255,255,0.2),
+            #34495ed0
+        );
+    }
+
+   
+}

@@ -1,0 +1,240 @@
+/*------------*/
+/*  PROYECT   */
+/*-----------*/
+
+#proyects {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), var(--theme-central-secundary);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    color: var(--text-color-inverse);
+    padding: 50px 0;
+}
+
+
+#proyects h2 {
+    padding: 0 20px;
+    font-size: 35px;
+    color: var(--text-color-inverse);
+    text-align: center;
+}
+
+#proyects .carta{
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 0 50px;
+}
+
+#proyects .carta-Titulo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secundary-color);
+    box-shadow: 0 2px 6px 4px #ccc;
+    
+
+}
+
+#proyects .carta .imagen1{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ),url("../../public/img/pro1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    /* padding: 0 5px; */
+}
+
+#proyects .carta .imagen2{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ),url("../../public/img/pro2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    /* padding: 0 5px; */
+}
+
+#proyects .carta .imagen3{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ),url("../../public/img/pro3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    /* padding: 0 5px; */
+}
+
+#proyects .carta button{
+    border: 2px solid var(--plus) ;
+    color: var(--plus);
+    margin: 10px 0;
+    padding: 5px 6px;
+    font-size: 20px;
+    font-weight: 650;
+    background: none ;
+    border-radius: 5px;
+}
+
+#proyects .carta button:hover{
+    border: 2px solid var(--plus) ;
+    color: var(--plus) ; 
+    background-color: var(--plus-inverse);
+}
+
+#proyects .carta-Descrip,
+#proyects .carta-Descrip2,
+#proyects .carta-Descrip3{
+    display: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color-inverse);
+    overflow: auto;
+    
+}
+
+#proyects .hover{
+    display: block;
+}
+
+
+#proyects .empty img{
+    display: none;
+}
+
+#proyects .container{
+    max-width: none;
+    margin: 0 0;
+}
+
+
+
+@media (min-width: 750px) {
+
+    #proyects .carta{
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        
+    }
+    
+    #proyects .carta-Titulo{
+        padding: 20px;
+        display: contents;
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--secundary-color);
+        box-shadow: none;
+        text-align: center;
+        margin: 15px 2.5em;
+        
+    
+    }
+    
+    #proyects .carta .imagen1,
+    #proyects .carta .imagen2,
+    #proyects .carta .imagen3{
+        background: none;
+    }
+    
+    #proyects .carta button{
+        display: none;
+    }
+    
+    #proyects .carta button:hover{
+        border: 2px solid var(--plus) ;
+        color: var(--plus) ; 
+        background-color: var(--plus-inverse);
+    }
+    
+    #proyects .carta-Descrip,
+    #proyects .carta-Descrip2,
+    #proyects .carta-Descrip3{
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 5px;
+        color: var(--text-color-inverse);
+        text-align: justify;
+        max-width: none;
+        overflow: none;
+        
+    }
+    
+    
+
+    /*GRID*/
+
+    #proyects .carta-grid{
+        display: grid;
+        grid-template-columns: auto 2px auto;
+        gap: 20px 70px;
+        padding: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #proyects .empty{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #proyects .empty img{
+        display: block;
+        width: calc(80% + 20px);
+        margin: 20px 0;
+        box-shadow: 0 2px 6px 4px #ccc;
+    }
+
+    #proyects .line{
+        background-color: #fff;
+        position: relative;
+    }
+
+    #proyects .line::before,
+    #proyects .line::after{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: var(--text-color-inverse);
+        border-radius: 50%;
+
+
+        position: absolute;
+        top: -20px;
+        left: -9px;
+
+    }
+
+    #proyects .line::after{
+        top: 100%;
+        z-index: 1;
+    }
+    /* FIN DE GRID*/
+    
+    
+    
+}

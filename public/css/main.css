@@ -1,0 +1,49 @@
+:root {
+    --theme-central: url("../img/fondo.jpeg");
+    --theme-central-secundary: url("../img/teatro.jpg");
+    --primary-color: #088A29;
+    --secundary-color: #13C313;
+    --menu-mobile-background-color: #0a0e17;
+    --text-color: #000;
+    --text-color-inverse: #fff;
+    --plus: #D7DBDD;
+    --plus-inverse: rgba(52, 73, 94, 0.8);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Ayuda a que el nav no opaque los titulos */
+section[id],
+div[id]{
+    scroll-margin-top: 90px;
+}
+
+/* Hace una animación para los link */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    /* padding-top: 80px; */
+    font-family: 'Anek Latin', sans-serif;
+    color: var(--text-color);
+}
+
+a {text-decoration: none; }
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/*caida hacia abajo*/
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

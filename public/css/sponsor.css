@@ -1,0 +1,121 @@
+/*------------*/
+/*  SPONSOR   */
+/*-----------*/
+
+#sponsor{
+    padding: 4em 0;
+}
+#sponsor h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 1000;
+    margin: 0;
+}
+
+#sponsor .spoShip{
+    margin: 15px 20px;
+    width: 200px;
+}
+
+#sponsor .spoShip .imagen{
+    box-shadow: 0 0 8px 4px #000;
+}
+
+#sponsor .spoShip .imagen.Uno{
+    background-image: url("../../public/img/boss1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#sponsor .spoShip .imagen.Dos{
+    background-image: url("../../public/img/boss3.jpg");
+    background-size: cover;
+    background-position: calc(50% - 38px);
+}
+
+#sponsor .spoShip .imagen.Tres{
+    background-image: url("../../public/img/boss2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: calc(50% - 19px);
+}
+
+#sponsor .spoShip .info{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    color: var(--text-color-inverse);
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+#sponsor .spoShip .info:hover{
+    opacity: 1;
+}
+
+#sponsor .nota{
+    display: none;
+    cursor: pointer;
+}
+
+@media (min-width: 750px) {
+    #sponsor h2{
+        font-size: 45px;
+        text-align: center;
+        font-weight: 1000;
+    }
+    
+    #sponsor .spoShip{
+        margin: 15px 25px;
+        width: 250px;
+    }
+    
+    #sponsor .spoShip .imagen{
+        box-shadow: 0 0 8px 4px #000;
+    }
+    
+    #sponsor .spoShip .imagen.Uno{
+        background-image: url("../../public/img/boss1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #sponsor .spoShip .imagen.Dos{
+        background-image: url("../../public/img/boss3.jpg");
+        background-size: cover;
+        background-position: calc(50% - 38px);
+    }
+    
+    #sponsor .spoShip .imagen.Tres{
+        background-image: url("../../public/img/boss2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-position: calc(50% - 19px);
+    }
+    
+    #sponsor .spoShip .info{
+        opacity: 0;
+    }
+    
+    #sponsor .spoShip .info:hover{
+        opacity: 0;
+    }
+
+    #sponsor .nota{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 5px solid var(--primary-color);
+        margin: 15px;
+        text-align: center;
+    }
+
+    #sponsor .nota:hover{
+        border: 5px solid var(--secundary-color);
+    }
+
+
+}
