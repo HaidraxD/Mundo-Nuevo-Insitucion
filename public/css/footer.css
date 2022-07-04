@@ -64,12 +64,13 @@
     background-color: var(--text-color-inverse);
     border: none;
     border-bottom: 5px solid #34495E ;
-    color: var(--text-color-inverse);
+    color: var(--text-color);
 }
 
 #contacto .form-input:focus{
     background: linear-gradient(to bottom, transparent, #34495E);
     outline: none;
+    color: var(--text-color-inverse);
 }
 
 ::placeholder{
@@ -187,33 +188,6 @@
         flex-wrap: wrap;
         
     }
-    
-    #contacto .form-input{
-        width: 100%;
-        padding: 12px;
-        box-sizing: border-box; /*Hace que las paginas no pacen la caja primaria*/
-        resize: vertical; /*esto hace que no se edite el text area */
-        background-color: var(--text-color-inverse);
-        border: none;
-        border-bottom: 5px solid #34495E ;
-        color: var(--text-color);
-    }
-    
-    #contacto .form-input.area{
-        width: 100%;
-    }
-    
-    #contacto .form-input:focus{
-        background: linear-gradient(to bottom, transparent, #34495E);
-        outline: none;
-        color: var(--text-color-inverse);
-    }
-    
-    ::placeholder{
-        color: #BDC3C7 ;
-    }
-    
-    
     
     #contacto .form-section{
         margin: 7px 10px;
