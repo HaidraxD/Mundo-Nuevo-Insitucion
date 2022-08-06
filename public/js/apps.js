@@ -1,7 +1,4 @@
 
-
-
-
 // NavBar 
 
 window.addEventListener("scroll", function(){
@@ -76,3 +73,4 @@ menuLinks.forEach(menuLink =>{
         observer.observe(target);
     }
 });
+

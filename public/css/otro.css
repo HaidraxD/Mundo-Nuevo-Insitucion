@@ -1,0 +1,150 @@
+:root{
+    --width: 250px;
+    --bgcolor: #0a0e17;
+    --bg: #1E8449;
+    --bg-shadow: #196F3D;
+    --height-up:50px ;
+    /*   */
+}
+
+body{
+    /* background: var(--bgcolor); */
+    color: var(--text-color-inverse);
+    margin-left: var(--width);
+}
+
+#top-menu{
+    display: none;
+}
+
+.sidemenu{
+    background-color: var(--bg);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: var(--text-color-inverse);
+    width: var(--width);
+}
+
+.sidemenu a{
+    color: var(--text-color-inverse);
+}
+
+.sidemenu #title img{
+    width: 90px;
+    height: 90px;
+}
+
+.sidemenu #header{
+    box-shadow: 0 4px 4px var(--bg-shadow);
+    padding: 20px 15px;
+}
+
+.sidemenu #header #title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sidemenu #header #title, #side #header #menu-btn{
+    vertical-align: middle; /*verificar para que sirve en profundidad*/
+}
+
+.sidemenu #menu-items{
+    overflow: hidden;
+}
+
+
+.sidemenu #menu-items .item{
+    width: var(--width);
+    /* border-bottom: solid 3px #196F3D; */
+}
+
+
+.sidemenu #menu-items .item .icon,
+.sidemenu #menu-items .item .title{
+    display: inline-block;
+    font-size: 17px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.sidemenu #menu-items .item a{
+    display: block;
+
+}
+
+.sidemenu #menu-items .item a:hover{
+    background-color: var(--bg-shadow);
+}
+
+.sidemenu #menu-items .item .icon{
+    padding: 15px 15px;
+    font-size: 25px;
+
+}
+
+.sidemenu #menu-items .item.down{
+    position: fixed;
+    bottom: 0;
+    /* background-color: red; */
+}
+
+@media (max-width: 1020px) {
+
+    .close{
+        display: none;
+    }
+
+    #top-menu{
+        display: flex;
+        align-items: center;
+        background: var(--bg);
+        width: 100%;
+        height: var(--height-up);
+        text-align: center;
+    }
+
+    #top-menu #menu-btn{
+        cursor: pointer;
+        width: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: calc(var(--height-up)/2);
+
+    }
+
+    #top-menu .icon{
+        /* background: red; */
+        height: var(--height-up);
+        padding: 10px 20px;
+
+    }
+
+    #top-menu .title{
+        text-align: center;
+        color: var(--text-color-inverse);
+        width: 100%;
+    }
+
+    #top-menu .icon:hover{
+        background-color: var(--bg-shadow);
+    }
+
+    #top-menu #menu-btn #btn-hamburger{
+        background-color: var(--text-color-inverse);
+        width: 100%;
+        height: 2px;
+        margin: 5px 0;
+
+    }
+
+    
+}
+
+
+
+

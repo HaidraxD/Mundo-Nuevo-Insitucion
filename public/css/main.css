@@ -7,10 +7,12 @@
     --text-color: #000;
     --text-color-inverse: #fff;
     --plus: #D7DBDD;
-    --plus-inverse: rgba(52, 73, 94, 0.8);
+    --plus-inverse: #34495E;
 }
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 

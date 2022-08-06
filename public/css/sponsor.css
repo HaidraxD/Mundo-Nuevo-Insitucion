@@ -22,19 +22,19 @@
 }
 
 #sponsor .spoShip .imagen.Uno{
-    background-image: url("../../public/img/boss1.jpg");
+    background-image: url("../img/boss1.jpg");
     background-size: cover;
     background-position: center;
 }
 
 #sponsor .spoShip .imagen.Dos{
-    background-image: url("../../public/img/boss3.jpg");
+    background-image: url("../img/boss3.jpg");
     background-size: cover;
     background-position: calc(50% - 38px);
 }
 
 #sponsor .spoShip .imagen.Tres{
-    background-image: url("../../public/img/boss2.jpg");
+    background-image: url("../img/boss2.jpg");
     background-size: cover;
     background-position: center;
     background-position: calc(50% - 19px);
@@ -78,19 +78,19 @@
     }
     
     #sponsor .spoShip .imagen.Uno{
-        background-image: url("../../public/img/boss1.jpg");
+        background-image: url("../img/boss1.jpg");
         background-size: cover;
         background-position: center;
     }
     
     #sponsor .spoShip .imagen.Dos{
-        background-image: url("../../public/img/boss3.jpg");
+        background-image: url("../img/boss3.jpg");
         background-size: cover;
         background-position: calc(50% - 38px);
     }
     
     #sponsor .spoShip .imagen.Tres{
-        background-image: url("../../public/img/boss2.jpg");
+        background-image: url("../img/boss2.jpg");
         background-size: cover;
         background-position: center;
         background-position: calc(50% - 19px);

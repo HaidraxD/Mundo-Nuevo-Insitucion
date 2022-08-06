@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Nuevo</title>
-    <link  rel="icon" href="../../public/img/icono.png">
+    <link  rel="icon" href="<?php echo constant('URL'); ?>public/img/icono.png">
     <!-- Normalize -->
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css">
     <!-- Fin de Normalize -->
-    <link rel="stylesheet" type="text/css" href="../../public/css/main.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/panel.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/about.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/proyects.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/sponsor.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo constant('URL'); ?>public/css/Main.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo constant('URL'); ?>public/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo constant('URL'); ?>public/css/panel.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo constant('URL'); ?>public/css/about.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo constant('URL'); ?>public/css/Proyects.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo constant('URL'); ?>public/css/Sponsor.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo constant('URL'); ?>public/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap" rel="stylesheet">
-    <script defer src="../../public/js/app.js"></script>
+    <script defer src="<?php echo constant('URL'); ?>public/js/apps.js"></script>
     <script src="https://kit.fontawesome.com/019b17adfa.js" crossorigin="anonymous"></script>
 
 </head>
@@ -28,8 +28,8 @@
     <!-- nav bar -->
     <header class="topheader">
         <nav class="nav">
-            <a class="logo">
-                <img src="../../public/img/icono.png" alt="Sistema Academico">
+            <a class="logo" href="#">
+                <img src="<?php echo constant('URL'); ?>public/img/icono.png" alt="Sistema Academico">
                 <div>
                     Mundo Nuevo<br>
                     <span>Institución</span>
@@ -45,9 +45,8 @@
                 <li class="nav-menu-item"><a class="nav-menu-link activate" href="#panel">Inicio</a></li>
                 <li class="nav-menu-item"><a class="nav-menu-link" href="#about">Nosotros</a></li>
                 <li class="nav-menu-item"><a class="nav-menu-link" href="#proyects">Proyectos</a></li>
-                <!-- <li class="nav-menu-item"><a class="nav-menu-link" href="#sponsor">Gerentes</a></li> -->
                 <li class="nav-menu-item"><a class="nav-menu-link" href="#contacto">Contacto</a></li>
-                <li class="nav-menu-item"><a class="nav-menu-link fijo" href="#">Login</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link fijo" href="<?php echo constant('URL'); ?>login">Login</a></li>
                 
             </ul>
         </nav>
@@ -79,15 +78,15 @@
 
             <div class="wrap">
                 <div class="img-container">
-                    <img src="../../public/img/student1.jpg">
+                    <img src="<?php echo constant('URL'); ?>public/img/student1.jpg">
                     <div class="img-container-line"></div>
                 </div>
                 <div class="img-container">
-                    <img src="../../public/img/student2.jpg">
+                    <img src="<?php echo constant('URL'); ?>public/img/student2.jpg">
                     <div class="img-container-line"></div>
                 </div>
                 <div class="img-container">
-                    <img src="../../public/img/student3.jpg">
+                    <img src="<?php echo constant('URL'); ?>public/img/student3.jpg">
                     <div class="img-container-line"></div>
             </div>
         </div>
@@ -103,7 +102,7 @@
 
             <div class="carta-grid">
                 <div class="empty">
-                    <img src="../../public/img/pro1.jpeg">
+                    <img src="<?php echo constant('URL'); ?>public/img/pro1.jpeg">
                 </div>
                 <div class="line"></div>
                 <div class="carta">
@@ -133,8 +132,8 @@
                     </div>
                 </div>
                 <div class="line"></div>
-                <div class="empty"><img src="../../public/img/pro2.jpg"></div>
-                <div class="empty"><img src="../../public/img/pro3.jpg"></div>
+                <div class="empty"><img src="<?php echo constant('URL'); ?>public/img/pro2.jpg"></div>
+                <div class="empty"><img src="<?php echo constant('URL'); ?>public/img/pro3.jpg"></div>
                 <div class="line"></div>
                 <div class="carta">
                     <div class="carta-Titulo imagen3">
@@ -250,12 +249,12 @@
     <!-- page pie -->
     <footer id="footer">
         <div class="container">
-            <a class="logo-footer" href="#panel">
+            <a class="logo-footer" href="#">
                 <div>
                     Mundo Nuevo<br>
                     <span>Institución</span>
                 </div>
-                <img src="../../public/img/icono.png" alt="Sistema Academico">
+                <img src="<?php echo constant('URL'); ?>public/img/icono.png" alt="Sistema Academico">
             </a>
             <b class="uno">&copy; 2022/06/16 Copyright | Diana Vargas Elescano </b>
             <b>Facebook |  Instagram | Twitter</b>

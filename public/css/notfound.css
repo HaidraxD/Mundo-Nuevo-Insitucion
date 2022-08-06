@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h1{
+    color: #AB341A ;
+    font-size: 15rem;
+}
+
+.container h2{
+    color: #fff ;
+    font-size: 4rem;
+    margin: 15px 0 40px;
+}
+
+.container .button{
+    background: #AB341A;
+    color: #fff;
+    padding: 15px 20px;
+}
+
